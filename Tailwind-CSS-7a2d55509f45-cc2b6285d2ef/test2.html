@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-roboto bg-gray-100">
+
+  <!-- Header -->
+  <div class="flex justify-between items-center px-4 py-4 bg-white shadow-md">
+    <img src="logo.png" alt="YouTube Logo" class="h-5">
+    <div class="flex-grow mx-8">
+      <input type="text" placeholder="Search" class="w-full text-base px-2 py-1 border border-gray-400 rounded-l">
+      <button class="px-5 py-1 bg-gray-100 border border-gray-400 border-l-0 rounded-r hover:bg-gray-200">Search</button>
+    </div>
+    <div class="grid grid-cols-4 gap-6 items-center">
+      <div class="rounded-full w-9 h-9 bg-gray-300"></div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="flex items-center px-8 py-4 border-t border-b border-gray-600">
+    <div class="flex overflow-hidden">
+      <button class="mr-4 whitespace-nowrap border border-gray-300 rounded-full bg-gray-200 px-4 py-2 text-sm hover:bg-gray-300 transition">
+        Category 1
+      </button>
+      <button class="mr-4 whitespace-nowrap border border-gray-300 rounded-full bg-gray-200 px-4 py-2 text-sm hover:bg-gray-300 transition active:bg-gray-600 active:text-white">
+        Active Category
+      </button>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-y-12 gap-x-4 px-6 py-12 border-t-4 border-gray-300">
+    <!-- Video Card -->
+    <div class="flex flex-col">
+      <!-- Thumbnail -->
+      <div class="relative flex thumbnail" data-duration="12:34">
+        <img src="thumbnail.jpg" alt="Thumbnail" class="w-full h-full min-w-[250px] min-h-[150px] bg-gray-300">
+      </div>
+      <!-- Bottom Section -->
+      <div class="flex items-start mt-4">
+        <div class="rounded-full w-9 h-9 bg-gray-300 mr-3"></div>
+        <div class="flex flex-col">
+          <a href="#" class="text-lg font-bold text-black mb-2">Video Title</a>
+          <a href="#" class="text-sm text-gray-500 hover:text-gray-800 transition">Channel Name</a>
+          <p class="text-sm text-gray-500">Metadata</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add more video cards here -->
+  </div>
+
+</body>
+</html>
+
+
